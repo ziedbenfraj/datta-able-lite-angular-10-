@@ -10,7 +10,10 @@ import {Location} from '@angular/common';
 })
 export class NavContentComponent implements OnInit, AfterViewInit {
   @Output() onNavCollapsedMob = new EventEmitter();
+ 
 
+
+  
   public dattaConfig: any;
   public navigation: any;
   public prevDisabled: string;
@@ -51,6 +54,8 @@ export class NavContentComponent implements OnInit, AfterViewInit {
     }
   }
 
+
+  
   scrollPlus() {
     this.scrollWidth = this.scrollWidth + (this.wrapperWidth - 80);
     if (this.scrollWidth > (this.contentWidth - this.wrapperWidth)) {

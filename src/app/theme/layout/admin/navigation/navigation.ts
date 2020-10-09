@@ -28,13 +28,13 @@ export interface Navigation extends NavigationItem {
 const NavigationItems = [
   {
     id: 'navigation',
-    title: 'Navigation',
+    title: 'test1',
     type: 'group',
     icon: 'icon-navigation',
     children: [
       {
         id: 'dashboard',
-        title: 'Dashboard',
+        title: 'dash',
         type: 'item',
         url: '/dashboard/default',
         icon: 'feather icon-home',
