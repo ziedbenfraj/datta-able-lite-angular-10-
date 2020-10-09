@@ -9,8 +9,7 @@
       [target]="item.target ? '_blank' : '_self'"
       [routerLink]="[item.url]"
       (click)="closeOtherMenu($event)"
-    >
-      <ng-container *ngTemplateOutlet="itemIcon"></ng-container>
+      ><i [ngClass]="item.icon"></i> &nbsp;
       <span class="pcoded-mtext" *ngIf="item.icon; else directTitle">{{
         item.title
       }}</span>
@@ -20,6 +19,7 @@
       <ng-container *ngTemplateOutlet="itemBadge"></ng-container>
     </a>
   </li>
+  <!-- check what is that !!   -->
   <li [ngClass]="item.classes" *ngIf="item.url && item.external">
     <a [target]="item.target ? '_blank' : '_self'" [href]="item.url">
       <ng-container *ngTemplateOutlet="itemIcon"></ng-container>
